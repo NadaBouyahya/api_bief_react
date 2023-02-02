@@ -1,11 +1,7 @@
 import React from "react";
 
-export default function SearchComponent(pops) {
-
-    // const handlSearch = (e)=>{
-        
-    // }
-
+export default function SearchComponent(props) {
+    
     return (
         <form className="max-w-sm px-4">
             <div className="relative">
@@ -27,6 +23,8 @@ export default function SearchComponent(pops) {
                     type="text"
                     placeholder="Search"
                     className="w-full py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-indigo-600"
+                    onChange={props.handle_search}
+                    // value={props.filterVal}
                 />
             </div>
         </form>
